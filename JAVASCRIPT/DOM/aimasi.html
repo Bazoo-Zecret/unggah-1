@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Animasi Warna</title>
+</head>
+
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore atque deleniti
+        laudantium fuga! Magnam sapiente inventore ratione, libero corrupti, consectetur ad laboriosam quibusdam, quas
+        eos neque magni mollitia at.</p>
+
+    <p class="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quidem corrupti tempora
+        ducimus laudantium dicta magni repudiandae vitae aliquam nemo asperiores, perspiciatis quod a ullam cumque id
+        quia! Ad, laudantium.</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga, obcaecati commodi
+        perspiciatis facere consequatur aliquid consectetur, rem dolorum ipsum provident quas voluptate modi, ad
+        perferendis. Nemo consequuntur tenetur facere!</p>
+
+    <script>
+        var pg = document.getElementsByClassName("paragraf");
+        // console.log(pg);
+        setInterval(function () {
+            pg[0].style.color = "red";
+            pg[1].style.color = "green";
+            pg[2].style.color = "blue";
+
+            setTimeout(function () {
+                pg[0].style.color = "goldenrod";
+                pg[1].style.color = "purple";
+                pg[2].style.color = "violet";
+            }, 500);
+        }, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Belajar onchange - JavaScript</title>
+</head>
+
+<body>
+    <h1>PROGRAM TARIF BUS</h1>
+    <hr>
+    Tujuan
+    <br>
+    <select name="tujuan" id="tujuan">
+        <option value="">- silahkan pilih tujuan anda -</option>
+        <option value="pekanbaru">Pekanbaru</option>
+        <option value="medan">Medan</option>
+        <option value="padang">Padang</option>
+    </select>
+    <br><br>
+
+    harga tiket
+    <br>
+    <input type="text" name="harga" id="harga" style="background-color: red;border:1px solid #2d2d2d; padding:5px;"
+        readonly>
+
+    <script>
+        var tj = document.getElementById('tujuan');
+        var hg = document.getElementById('harga');
+
+        tj.addEventListener('change', function () {
+            if (tj.value == 'pekanbaru') {
+                hg.value = 'Rp.70.000';
+            }
+
+            else if (tj.value == 'medan') {
+                hg.value = 'Rp.200.000';
+            }
+
+            else if (tj.value == 'padang') {
+                hg.value = 'Rp.150.000';
+            }
+
+        })
+    </script>
+</body>
+
+</html>

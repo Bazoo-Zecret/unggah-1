@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Tugas_Percabangan</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="asets/css/bootstrap.min.css">
+
+</head>
+
+<body class="m-3">
+    <h1>Program Mencari Grade Nilai</h1>
+    <hr>
+    <p>INPUT NILAI</p>
+    <input type="text" id="nilai">
+    <br><br>
+    <button class="btn btn-primary" onclick="hasil()">Cek</button>
+    <br><br>
+    <div><span id="hasil"></span> </div>
+
+    <script>
+        function hasil() {
+
+            var p = document.getElementById('nilai').value;
+            var h = document.getElementById('hasil');
+            console.log(p);
+
+            if (p >= 90 && p <= 100) {
+                h.innerHTML = "Grade Nilai anda adalah A";
+            }
+            else if (p >= 80 && P <= 89) {
+                h.innerHTML = "Grade Nilai anda adalah B";
+            }
+            else if (p >= 75 && P <= 79) {
+                h.innerHTML = "Grade Nilai anda adalah C";
+            }
+            else if (p < 75 && P >= 65) {
+                h.innerHTML = "Grade Nilai anda adalah D";
+            }
+            else if (p < 65 && p >= 0) {
+                h.innerHTML = "belajar lagi bang";
+            }
+            else {
+                h.innerHTML = "yang bener aja lu ngab";
+            }
+        }
+
+        if (condition) {
+
+        }
+    </script>
+</body>
+
+<script src="asets/js/bootstrap.bundle.min.js"></script>
+
+</html>

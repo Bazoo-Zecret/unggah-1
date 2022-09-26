@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>RBG background</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <Input type="button" value="red" onclick="tretan('red')">
+    <Input type="button" value="blue" onclick="tretan('blue')">
+    <Input type="button" value="green" onclick="tretan('green')">
+
+    <script>
+        var box = document.getElementById("box");
+        box.style.width = "400px";
+        box.style.height = "200px";
+        box.style.marginBottom = "10px";
+        box.style.borderRadius = "5px";
+
+        function tretan(color) {
+            box.style.background = color;
+        }
+    </script>
+</body>
+
+</html>

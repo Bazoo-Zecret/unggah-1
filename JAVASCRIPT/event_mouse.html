@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Belajar Event mouse - javascript</title>
+</head>
+
+<body>
+    <button id="btn-enter">Mouse enter</button>
+    <button id="btn-over">Mouse over</button>
+    <button id="btn-out">Mouse out</button>
+
+    <script>
+        // definisi variabel untuk masing2 tombol
+        var btnenter = document.getElementById
+            ('btn-enter')
+        var btnover = document.getElementById
+            ('btn-over')
+        var btnout = document.getElementById
+            ('btn-out')
+        btnenter.addEventListener('mouseenter', function () {
+            btnenter.innerText = "mouse sudah masuk";
+        })
+
+        btnenter.addEventListener('mouseover', function () {
+            btnover.innerText = "mouse sudah diatas";
+        })
+
+        btnenter.addEventListener('mouseout', function () {
+            btnout.innerText = "mouse sudah keluar";
+        })
+    </script>
+</body>
+
+</html>

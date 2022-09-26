@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Belajar FOR</title>
+</head>
+
+<body>
+    <input type="text" name="uta" id="uta">
+    <button onclick="jumlah()">Lihat</button>
+    <br>
+
+    <script>
+        function jumlah() {
+            var a = document.getElementById('uta').value;
+
+            for (var makan = 1; makan <= a; makan++) {
+                for (var sate = 1; sate <= makan; sate++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
